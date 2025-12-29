@@ -51,10 +51,10 @@ const (
 	// want to let it having some time for its cold start so we should not set this too low.
 	timeout = 3000 * time.Millisecond
 
-	helloUrl           = "http://localhost:8124/lambda/hello"
-	flushUrl           = "http://localhost:8124/lambda/flush"
-	startInvocationUrl = "http://localhost:8124/lambda/start-invocation"
-	endInvocationUrl   = "http://localhost:8124/lambda/end-invocation"
+	helloUrl           = "http://localhost:8126/lambda/hello"
+	flushUrl           = "http://localhost:8126/lambda/flush"
+	startInvocationUrl = "http://localhost:8126/lambda/start-invocation"
+	endInvocationUrl   = "http://localhost:8126/lambda/end-invocation"
 
 	extensionPath = "/opt/extensions/datadog-agent"
 )
