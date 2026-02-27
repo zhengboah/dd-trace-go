@@ -201,7 +201,7 @@ func (em *ExtensionManager) SendEndInvocationRequest(ctx context.Context, functi
 		}
 	}
 
-	logger.Debug(fmt.Sprintf("Sending end invocation request to the extension, traceId: %s, spanId: %s, headers: %v", traceId, spanId, req.Header))
+	logger.Debug(fmt.Sprintf("Sending end invocation request to the extension, traceId: %s, headers: %v", traceId, req.Header))
 
 	resp, err := em.httpClient.Do(req)
 	if resp != nil && resp.Body != nil {
